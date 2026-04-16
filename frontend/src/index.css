@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f7f8;
+  --color-primary-100: #dcecef;
+  --color-primary-200: #b9d8df;
+  --color-primary-300: #89b9c5;
+  --color-primary-400: #538ea0;
+  --color-primary-500: #2d6e81;
+  --color-primary-600: #1d5669;
+  --color-primary-700: #124859;
+  --color-primary-800: #013B4B;
+  --color-primary-900: #002b38;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
